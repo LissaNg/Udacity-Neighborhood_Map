@@ -10,9 +10,7 @@ Udacity Neighborhood Map
     $git clone https://github.com/LissaNgSang/Udacity-Neighborhood_Map.git
     $ cd Udacity-Neighborhood_Map
     $ open index.html
-
-    Or open [here](https://lissangsang.github.io/Udacity-Neighborhood_Map/)
-
+   or click [Neighborhood Map](https://lissangsang.github.io/Udacity-Neighborhood_Map/) to preview
 ## Use
     1. Use "Show Listings" or "Hide Listings" for the places I recommend to go in DC
     2. Click on the icons to show you more info about the places. Icons show the type of places they are (park, museum, dining)

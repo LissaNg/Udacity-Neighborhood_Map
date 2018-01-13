@@ -18,12 +18,11 @@ Udacity Neighborhood Map
     2. Click on the icons to show you more info about the places. Icons show the type of places they are (park, museum, dining)
     3. Click on the hamburger button (right top) to open a menu showing the listings and also allows you to search for an specific item on the listings
 
-###API
-  -Google API
-  -Google Street viewe
-  -Foursquare
+### API
+  * Google API
+  * Google Street view
+  * Foursquare
 
-###Sources
-  -W3School
-  -Snazzy maps
-  
+### Sources
+  * W3School
+  * Snazzy maps

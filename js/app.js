@@ -330,22 +330,22 @@ showListings = function() {
     bounds.extend(markers[i].position);
   }
   map.fitBounds(bounds);
-}
+};
 //hide listings
 hideListings = function() {
   for (var i = 0; i < markers.length; i++) {
     markers[i].setMap(null);
   }
-}
+};
 //open and close off canvas nav
 
 openNav = function() {
     document.getElementById("mySidenav").style.width = "250px";
-}
+};
 
 closeNav = function() {
     document.getElementById("mySidenav").style.width = "0";
-}
+};
 
 // message that comes up if google goes wrong
 function ErrorGoogleMaps() {

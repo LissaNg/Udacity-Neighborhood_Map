@@ -162,9 +162,7 @@ function initMap() {
 
     ko.applyBindings(new AppViewModel());
 
-    document.getElementById('show-listings').addEventListener('click', showListings);
-    document.getElementById('hide-listings').addEventListener('click', hideListings);
-}
+  }
 
 var MarkerMaker = function(data) {
     var self = this;
@@ -322,27 +320,30 @@ function markerBounce(marker) {
         }, 790);
     }
 }
+
+
 //show listings
-function showListings() {
-    var bounds = new google.maps.LatLngBounds();
-    for (var i = 0; i < markers.length; i++) {
-        markers[i].setMap(map);
-        bounds.extend(markers[i].position);
-    }
-    map.fitBounds(bounds);
+showListings = function() {
+  var bounds = new google.maps.LatLngBounds();
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+    bounds.extend(markers[i].position);
+  }
+  map.fitBounds(bounds);
 }
 //hide listings
-function hideListings() {
-    for (var i = 0; i < markers.length; i++) {
-        markers[i].setMap(null);
-    }
+hideListings = function() {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+  }
 }
 //open and close off canvas nav
-function openNav() {
+
+openNav = function() {
     document.getElementById("mySidenav").style.width = "250px";
 }
 
-function closeNav() {
+closeNav = function() {
     document.getElementById("mySidenav").style.width = "0";
 }
 

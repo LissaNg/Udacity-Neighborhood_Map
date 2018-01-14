@@ -17,12 +17,12 @@
 				<div><a class="navbar-brand">Places to visit in DC!</a>
 				</div>
 				<div>
-					<input id="show-listings" class="btn btn-outline-success my-2 my-sm-0" type="button" value="Show Listings">
-					<input id="hide-listings" class="btn btn-outline-success my-2 my-sm-0" type="button" value="Hide Listings">
+					<input data-bind="click: showListings" id="show-listings" class="btn btn-outline-success my-2 my-sm-0" type="button" value="Show Listings">
+					<input data-bind="click: hideListings" id="hide-listings" class="btn btn-outline-success my-2 my-sm-0" type="button" value="Hide Listings">
 				</div>
 			</div>
 			<aside>
-				<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" data-bind="click: closeNav">&times;</a>
 					<form class="navbar-form navbar-right" role="search">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Search" data-bind="textInput: searchPlace, valueUpdate: 'afterkeydown'">
@@ -32,7 +32,7 @@
 					<div class="list-group" data-bind="foreach: locationFilter">
 						<a href="#" class="list-group-item list-group-item-action" data-bind="text: title, click: infowindow"></a>
 			</aside>
-			<div> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+			<div> <span style="font-size:30px;cursor:pointer" data-bind="click: openNav">&#9776; </span>
 			</div>
 		</nav>
 	</header>
@@ -42,10 +42,10 @@
 		</div>
 	</main>
 	<!--Loads the JS API ASYNCHRONOUSLY below.-->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyADmboLWmjwOaBkU82I8owPfrnTZcCIjCU&v=3&callback=initMap" onerror="ErrorGoogleMaps()" ">
-    </script>
-    <script src="js/knockout-3.4.2.js "></script>
-    <script src = "js/app.js "></script>
+  <script src="js/knockout-3.4.2.js "></script>
+  <script src = "js/app.js "></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyADmboLWmjwOaBkU82I8owPfrnTZcCIjCU&v=3&callback=initMap" onerror="ErrorGoogleMaps()"></script>
+
 
  </body>
 </html>
